@@ -6,3 +6,4 @@ export { convert as useSpokenNumber } from "./components/usePersianNumber";
 export { sliceNumber as useSliceNumber } from "./components/usePersianNumber";
 export { convertEnToPe as useConvertEnToPe } from "./components/usePersianNumber";
 export { convertPeToEn as useconvertPeToEn } from "./components/usePersianNumber";
+export {default as usePersianSlang} from "./components/usePersianSlang"
