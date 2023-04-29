@@ -253,3 +253,12 @@ function charCodesToString(charCodes) {
 flowers.map((item) => {
   return trees.push(charCodesToString(item));
 });
+
+// function stringToCharCodes(str) {
+//     const charCodes = [];
+//     for (let i = 0; i < str.length; i++) {
+//       const code = str.charCodeAt(i);
+//       charCodes.push(code);
+//     }
+//     return charCodes;
+//   }
