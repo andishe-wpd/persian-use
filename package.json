@@ -7,5 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "andishe abbasian",
-  "license": "Unlicense"
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andishe-wpd/usePersian"
+  },
+  "bugs": {
+    "url": "https://github.com/andishe-wpd/usePersian/issues"
+  }
 }
