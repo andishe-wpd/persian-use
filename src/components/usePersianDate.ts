@@ -1,4 +1,4 @@
-const getPersianDate = (date: Date): string => {
+const usePersianDate = (date: Date): string => {
   const options: Intl.DateTimeFormatOptions = {
     year: "numeric",
     month: "long",
@@ -15,3 +15,4 @@ const getPersianDate = (date: Date): string => {
 // const gregorianDate = new Date();
 // const persianDate = getPersianDate(gregorianDate);
 // console.log(persianDate); // outputs e.g. "یکشنبه، ۱۷ اردیبهشت ۱۴۰۲"
+export default usePersianDate
