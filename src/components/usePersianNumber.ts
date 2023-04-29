@@ -381,11 +381,3 @@ export const convertPeToEn = (number) => {
   return res;
 };
 
-console.log(convert("23%"));
-
-// module.exports = exports = {
-//   convert,
-//   sliceNumber,
-//   convertEnToPe,
-//   convertPeToEn
-// };
