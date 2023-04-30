@@ -4,7 +4,7 @@
   "description": "collection of persian-use-hooks for react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "andishe abbasian",
   "license": "Unlicense",
