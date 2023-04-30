@@ -71,9 +71,9 @@ console.log(spokenNumber); // "یک هزار و دویست و سی و چهار �
 A function that converts large Persian numbers to a more readable format by adding commas as separators. For example, it converts 123456789 to 123,456,789.
 
 ```typescript
-`import { useSliceNumber } from "persian-use";
+import { useSliceNumber } from "persian-use";
 const moreReadable = useSliceNumber(123123);
-console.log(moreReadable); // "123,123"`;
+console.log(moreReadable); // "123,123";
 ```
 
 ### `useConvertEnToPe`
