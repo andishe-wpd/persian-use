@@ -1,22 +1,18 @@
 {
-    "compilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
-      "esModuleInterop": true,
-      "sourceMap": true,
-      "strict": true,
-      "noImplicitAny": true,
-      "moduleResolution": "node",
-      "baseUrl": "./",
-      "paths": {
-        "*": ["node_modules/*", "src/types/*"]
-      }
-    },
-    "include": [
-      "src/**/*"
-    ],
-    "exclude": [
-      "node_modules",
-      "**/*.spec.ts"
-    ]
-  }
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

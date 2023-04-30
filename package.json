@@ -2,10 +2,13 @@
   "name": "persian-use",
   "version": "1.0.0",
   "description": "collection of persian-use-hooks for react",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "jest",
-    "build": "tsc && babel dist --out-dir dist"
+    "build": "tsc -d && babel src -d false -D -d dist"
   },
   "author": "andishe abbasian",
   "license": "Unlicense",
