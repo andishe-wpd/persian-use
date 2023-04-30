@@ -1,4 +1,8 @@
-function usePersianMobile(number: string | number) {
+import { convertPeToEn } from "./usePersianNumber";
+
+function usePersianMobile(phoneNumber: string | number) {
+  // recive english and persian number but convert and validate it in english
+  let number = convertPeToEn(phoneNumber) 
   // Check if the input is a string
   if (typeof number !== "string") {
     console.error("Phone number must be a string");
