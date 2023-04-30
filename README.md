@@ -2,10 +2,6 @@
 
 A collection of useful utilities for Persian users written in JavaScript. This npm package includes the following utils:
 
-# Persian-Use
-
-A collection of useful utilities for Persian users written in JavaScript. This npm package includes the following utils:
-
 ### `useIncludesPersian`
 
 This hook checks if a given string includes any Persian characters.
