@@ -2,8 +2,6 @@
 
 A collection of useful utilities for Persian users written in JavaScript. This npm package includes the following utils:
 
-### `useIncludesPersian`
-
 # Persian-Use
 
 A collection of useful utilities for Persian users written in JavaScript. This npm package includes the following utils:
