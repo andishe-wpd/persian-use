@@ -11,8 +11,5 @@ const usePersianDate = (date: Date): string => {
   return date.toLocaleDateString("fa-IR", options);
 };
 
-// Example usage
-// const gregorianDate = new Date();
-// const persianDate = getPersianDate(gregorianDate);
-// console.log(persianDate); // outputs e.g. "یکشنبه، ۱۷ اردیبهشت ۱۴۰۲"
+
 export default usePersianDate
