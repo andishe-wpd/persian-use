@@ -13,3 +13,10 @@ export {
   useFinglishToPersian,
   usePersianToFinglish,
 } from "./components/useFinglishEnglishConvertor";
+
+export {
+  freeTranslator as useFreeTranslator,
+  persianToEnglishTranslator as usePresianToEnglishTranslator,
+  englishToPersinaTranslator as useEnglishToPersianTranslator,
+  anythingToPersianTranslator as useAnythingToPersianTranslator,
+} from "./components/useTranslator";
