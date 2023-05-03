@@ -6,4 +6,5 @@ implemented CI workflows.
 - 6-2-2023
 updated new features on docs.
 updated slangdetector logic.
+added translation functionality
 updated github workflow config
