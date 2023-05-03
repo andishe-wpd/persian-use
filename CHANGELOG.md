@@ -7,3 +7,4 @@ implemented CI workflows.
 updated new features on docs.
 updated slangdetector logic.
 added translation functionality
+updated github workflow config
