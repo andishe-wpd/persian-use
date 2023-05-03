@@ -1,4 +1,4 @@
-export const freeTranslator = async (
+const freeTranslator = async (
   textString: string,
   fromLanguage: string,
   toLanguage: string
