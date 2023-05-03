@@ -22,6 +22,36 @@ const gregorianDate = new Date();
 const persianDate = usePersianDate(gregorianDate);
 console.log(persianDate); // e.g. "یکشنبه، ۱۷ اردیبهشت ۱۴۰۲"
 ```
+### `usefreeTranslator`
+
+code snippet for a free translator that uses the Google Translate API. It takes in a text string, a source language, and a target language and returns the translated text.
+The translator has three helper functions that allow you to translate a text string from Persian to English, from English to Persian, or from any language to Persian.
+
+```typescript
+export const persianToEnglishTranslator = (inputString: string) => {
+  return freeTranslator(inputString, "fa", "en");
+};
+
+export const englishToPersianTranslator = (inputString: string) => {
+  return freeTranslator(inputString, "en", "fa");
+};
+
+export const anythingToPersianTranslator = (inputString: string) => {
+  return freeTranslator(inputString, "", "fa");
+};
+```
+```typescript
+persianToEnglishTranslator("سلام دنیا").then(console.log);
+// Output: "Hello world"
+```
+```typescript
+englishToPersianTranslator("Hello world").then(console.log);
+// Output: "سلام دنیا"
+```
+```typescript
+anythingToPersianTranslator("Bonjour le monde").then(console.log);
+// Output: "سلام دنیا"
+```
 
 ### `usePersianMobile`
 
