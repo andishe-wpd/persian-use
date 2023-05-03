@@ -1,6 +1,6 @@
 {
   "name": "persian-use",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "collection of persian-use-hooks for react",
   "main": "dist/index.js",
   "files": [
