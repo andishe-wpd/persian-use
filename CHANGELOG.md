@@ -12,3 +12,4 @@ updated github workflow config
 updated keywords to package
 added test for pure persian
 updated package description
+added half space for persian written form

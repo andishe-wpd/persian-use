@@ -1,3 +1,10 @@
+   <div align="center">
+    <br />
+    <br />
+    <a href="https://www.npmjs.com/package/react-use">
+       <img src="https://img.shields.io/npm/v/react-use.svg" alt="npm package" />
+    </a>
+</div>
 # Persian-Use
 
 A collection of useful utilities for Persian users written in JavaScript. This npm package includes the following utils:
@@ -22,6 +29,7 @@ const gregorianDate = new Date();
 const persianDate = usePersianDate(gregorianDate);
 console.log(persianDate); // e.g. "یکشنبه، ۱۷ اردیبهشت ۱۴۰۲"
 ```
+
 ### `usefreeTranslator`
 
 code snippet for a free translator that uses the Google Translate API. It takes in a text string, a source language, and a target language and returns the translated text.
@@ -40,19 +48,32 @@ export const anythingToPersianTranslator = (inputString: string) => {
   return freeTranslator(inputString, "", "fa");
 };
 ```
+
 ```typescript
 persianToEnglishTranslator("سلام دنیا").then(console.log);
 // Output: "Hello world"
 ```
+
 ```typescript
 englishToPersianTranslator("Hello world").then(console.log);
 // Output: "سلام دنیا"
 ```
+
 ```typescript
 anythingToPersianTranslator("Bonjour le monde").then(console.log);
 // Output: "سلام دنیا"
 ```
 
+### `usePersiuseHalfSpaceanMobile`
+
+The useHalfSpace function is a utility function that converts Arabic and Persian text to use half-space instead of full space in specific cases.
+```typescript
+import useHalfSpace from './useHalfSpace';
+const inputText = 'آدم ها ماشین ها سیاره ها';
+const outputText = useHalfSpace(inputText);
+console.log(outputText);
+// Output: "آدم‌ها ماشین‌ها سیاره ها"
+```
 ### `usePersianMobile`
 
 This hook validates whether a given string is a valid Persian mobile phone number.
