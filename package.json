@@ -1,10 +1,24 @@
 {
   "name": "persian-use",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "collection of persian-use-hooks for react",
   "main": "dist/index.js",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "Persian calendar",
+    "Persian text processing",
+    "Persian date and time",
+    "Persian utilities",
+    "Persian slang",
+    "Persian text processing",
+    "Persian number to word",
+    "Persian Translator",
+    "iran currency ",
+    "dollar and rial convertor",
+    "persian currency exchange",
+    "persina digits"
   ],
   "scripts": {
     "test": "jest",
