@@ -64,6 +64,16 @@ anythingToPersianTranslator("Bonjour le monde").then(console.log);
 // Output: "سلام دنیا"
 ```
 
+### `usePersiuseHalfSpaceanMobile`
+
+The useHalfSpace function is a utility function that converts Arabic and Persian text to use half-space instead of full space in specific cases.
+```typescript
+import useHalfSpace from './useHalfSpace';
+const inputText = 'آدم ها ماشین ها سیاره ها';
+const outputText = useHalfSpace(inputText);
+console.log(outputText);
+// Output: "آدم‌ها ماشین‌ها سیاره ها"
+```
 ### `usePersianMobile`
 
 This hook validates whether a given string is a valid Persian mobile phone number.
