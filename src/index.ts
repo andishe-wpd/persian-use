@@ -19,3 +19,5 @@ export {
   englishToPersinaTranslator as useEnglishToPersianTranslator,
   anythingToPersianTranslator as useAnythingToPersianTranslator,
 } from "./components/useTranslator";
+
+export {default as useHalfSpace } from "./components/useHalfSpace"
