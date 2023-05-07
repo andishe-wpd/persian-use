@@ -1,9 +1,10 @@
+   <div align="center">
     <br />
     <br />
     <a href="https://www.npmjs.com/package/react-use">
        <img src="https://img.shields.io/npm/v/react-use.svg" alt="npm package" />
     </a>
-
+</div>
 # Persian-Use
 
 A collection of useful utilities for Persian users written in JavaScript. This npm package includes the following utils:
