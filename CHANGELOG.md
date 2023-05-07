@@ -10,3 +10,5 @@ added translation functionality
 updated github workflow config
 - 5-7-2023
 updated keywords to package
+added test for pure persian
+updated package description
