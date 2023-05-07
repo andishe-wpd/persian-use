@@ -6,6 +6,20 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "Persian calendar",
+    "Persian text processing",
+    "Persian date and time",
+    "Persian utilities",
+    "Persian slang",
+    "Persian text processing",
+    "Persian number to word",
+    "Persian Translator",
+    "iran currency ",
+    "dollar and rial convertor",
+    "persian currency exchange",
+    "persina digits"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc -d && babel src -d false -D -d dist"
