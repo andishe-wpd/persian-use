@@ -1,7 +1,7 @@
 {
   "name": "persian-use",
   "version": "1.0.5",
-  "description": "collection of persian-use-hooks for react",
+  "description": "A collection of useful utilities for Persian users written in TypeScript ",
   "main": "dist/index.js",
   "files": [
     "dist"
