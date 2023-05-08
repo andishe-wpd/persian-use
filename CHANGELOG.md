@@ -13,3 +13,5 @@ updated keywords to package
 added test for pure persian
 updated package description
 added half space for persian written form
+- 5-8-2023
+dist folder ommited 
