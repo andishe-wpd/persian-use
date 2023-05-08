@@ -16,6 +16,7 @@ jobs:
           node-version: 16
       - name: Install dependencies
         run: yarn
+      - run: yarn test
       - run: yarn build
 
   publish-npm:
