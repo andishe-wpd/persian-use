@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsc -d && babel src -d false -D -d dist"
+    "build": "tsc && babel dist -d false -D -d dist --copy-files "
   },
   "author": "andishe abbasian",
   "license": "Unlicense",
