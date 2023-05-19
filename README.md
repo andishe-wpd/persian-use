@@ -7,9 +7,9 @@ A collection of useful utilities for Persian users written in JavaScript. This n
 This hook converts a given number to its written and spoken form in Persian.
 
 ```typescript
-import { useSpokenNumber } from "persian-use";
-const spokenNumber = useSpokenNumber(1234.56);
-console.log(spokenNumber); // "یک هزار و دویست و سی و چهار ممیز پنجاه و شش صدم"
+import { useSpokenNumber } from 'persian-use'
+const spokenNumber = useSpokenNumber(1234.56)
+console.log(spokenNumber) // "یک هزار و دویست و سی و چهار ممیز پنجاه و شش صدم"
 ```
 
 ### `usePersianDate`
@@ -17,10 +17,10 @@ console.log(spokenNumber); // "یک هزار و دویست و سی و چهار �
 This hook converts a Gregorian date into a Jalali (Persian) date with full support of weekday and month names.
 
 ```typescript
-import { usePersianDate } from "persian-use";
-const gregorianDate = new Date();
-const persianDate = usePersianDate(gregorianDate);
-console.log(persianDate); // e.g. "یکشنبه، ۱۷ اردیبهشت ۱۴۰۲"
+import { usePersianDate } from 'persian-use'
+const gregorianDate = new Date()
+const persianDate = usePersianDate(gregorianDate)
+console.log(persianDate) // e.g. "یکشنبه، ۱۷ اردیبهشت ۱۴۰۲"
 ```
 
 ### `usefreeTranslator`
@@ -30,54 +30,56 @@ The translator has three helper functions that allow you to translate a text str
 
 ```typescript
 export const persianToEnglishTranslator = (inputString: string) => {
-  return freeTranslator(inputString, "fa", "en");
-};
+  return freeTranslator(inputString, 'fa', 'en')
+}
 
 export const englishToPersianTranslator = (inputString: string) => {
-  return freeTranslator(inputString, "en", "fa");
-};
+  return freeTranslator(inputString, 'en', 'fa')
+}
 
 export const anythingToPersianTranslator = (inputString: string) => {
-  return freeTranslator(inputString, "", "fa");
-};
+  return freeTranslator(inputString, '', 'fa')
+}
 ```
 
 ```typescript
-persianToEnglishTranslator("سلام دنیا").then(console.log);
+persianToEnglishTranslator('سلام دنیا').then(console.log)
 // Output: "Hello world"
 ```
 
 ```typescript
-englishToPersianTranslator("Hello world").then(console.log);
+englishToPersianTranslator('Hello world').then(console.log)
 // Output: "سلام دنیا"
 ```
 
 ```typescript
-anythingToPersianTranslator("Bonjour le monde").then(console.log);
+anythingToPersianTranslator('Bonjour le monde').then(console.log)
 // Output: "سلام دنیا"
 ```
 
 ### `usePersiuseHalfSpaceanMobile`
 
 The useHalfSpace function is a utility function that converts Arabic and Persian text to use half-space instead of full space in specific cases.
+
 ```typescript
-import useHalfSpace from './useHalfSpace';
-const inputText = 'آدم ها ماشین ها سیاره ها';
-const outputText = useHalfSpace(inputText);
-console.log(outputText);
+import useHalfSpace from './useHalfSpace'
+const inputText = 'آدم ها ماشین ها سیاره ها'
+const outputText = useHalfSpace(inputText)
+console.log(outputText)
 // Output: "آدم‌ها ماشین‌ها سیاره ها"
 ```
+
 ### `usePersianMobile`
 
 This hook validates whether a given string is a valid Persian mobile phone number.
 
 ```typescript
-import { usePersianMobile } from "persian-use";
-const isValidMobileNumber = usePersianMobile("09123456789");
-console.log(isValidMobileNumber);
+import { usePersianMobile } from 'persian-use'
+const isValidMobileNumber = usePersianMobile('09123456789')
+console.log(isValidMobileNumber)
 // true  const
-isInvalidMobileNumber = usePersianMobile("1234567890");
-console.log(isInvalidMobileNumber); // false
+isInvalidMobileNumber = usePersianMobile('1234567890')
+console.log(isInvalidMobileNumber) // false
 ```
 
 ### `usePersianCurrency`
@@ -85,10 +87,10 @@ console.log(isInvalidMobileNumber); // false
 The usePersianCurrency function is a custom hook that fetches the exchange rate of USD to IRR (Iranian Rial) from the xe.com website. The function uses a regular expression to extract the exchange rate from the HTML response and returns it.
 
 ```typescript
-import usePersianCurrency from "persian-use/usePersianCurrency";
+import usePersianCurrency from 'persian-use/usePersianCurrency'
 
-const exchangeRate = usePersianCurrency();
-console.log(`1 USD = ${exchangeRate} IRR`);
+const exchangeRate = usePersianCurrency()
+console.log(`1 USD = ${exchangeRate} IRR`)
 ```
 
 ### `UsePersianSlang (fohsh detector)`
@@ -96,13 +98,13 @@ console.log(`1 USD = ${exchangeRate} IRR`);
 UsePersianSlang is a simple utility function that takes in a string and checks if it contains any Persian slang words or not.
 
 ```typescript
-import usePersianSlang from "use-persian-slang";
+import usePersianSlang from 'use-persian-slang'
 
-const string1 = "این یک جمله است";
-const string2 = "این جمله حاوی کلمه بد است";
+const string1 = 'این یک جمله است'
+const string2 = 'این جمله حاوی کلمه بد است'
 
-console.log(usePersianSlang(string1)); // false
-console.log(usePersianSlang(string2)); // true
+console.log(usePersianSlang(string1)) // false
+console.log(usePersianSlang(string2)) // true
 ```
 
 ### `UsePersianToFinglish and UseFinglishToPersian`
@@ -113,13 +115,13 @@ UsePersianToFinglish and UseFinglishToPersian are two utility functions that all
 import {
   usePersianToFinglish,
   useFinglishToPersian,
-} from "use-persian-finglish";
+} from 'use-persian-finglish'
 
-const persianText = "این یک متن فارسی است";
-const finglishText = "in yek matn farsi ast";
+const persianText = 'این یک متن فارسی است'
+const finglishText = 'in yek matn farsi ast'
 
-console.log(usePersianToFinglish(persianText)); // "in yek matn farsi ast"
-console.log(useFinglishToPersian(finglishText)); // "این یک متن فارسی است"
+console.log(usePersianToFinglish(persianText)) // "in yek matn farsi ast"
+console.log(useFinglishToPersian(finglishText)) // "این یک متن فارسی است"
 ```
 
 ### `useConvertEnToPe`
@@ -127,9 +129,9 @@ console.log(useFinglishToPersian(finglishText)); // "این یک متن فارس
 This hook converts English digits in a string to Persian digits.
 
 ```typescript
-import { useConvertEnToPe } from "persian-use";
-const persianDigits = useConvertEnToPe("1234567890");
-console.log(persianDigits); // "۱۲۳۴۵۶۷۸۹۰"
+import { useConvertEnToPe } from 'persian-use'
+const persianDigits = useConvertEnToPe('1234567890')
+console.log(persianDigits) // "۱۲۳۴۵۶۷۸۹۰"
 ```
 
 ### `useconvertPeToEn`
@@ -147,11 +149,11 @@ console.log(englishDigits);
 This hook checks if a given string only includes Persian characters.
 
 ```typescript
-import { usePurePersian } from "persian-use";
-const hasOnlyPersianCharacters = usePurePersian("سلام");
-console.log(hasOnlyPersianCharacters); // true
-const hasEnglishCharacters = usePurePersian("Hello سلام");
-console.log(hasEnglishCharacters); // false
+import { usePurePersian } from 'persian-use'
+const hasOnlyPersianCharacters = usePurePersian('سلام')
+console.log(hasOnlyPersianCharacters) // true
+const hasEnglishCharacters = usePurePersian('Hello سلام')
+console.log(hasEnglishCharacters) // false
 ```
 
 ### `useIncludesPersian`
@@ -159,9 +161,9 @@ console.log(hasEnglishCharacters); // false
 This hook checks if a given string includes any Persian characters.
 
 ```typescript
-import { useIncludesPersian } from "persian-use";
-const hasPersianCharacters = useIncludesPersian("Hello سلام");
-console.log(hasPersianCharacters); // true
+import { useIncludesPersian } from 'persian-use'
+const hasPersianCharacters = useIncludesPersian('Hello سلام')
+console.log(hasPersianCharacters) // true
 ```
 
 ## Installation
