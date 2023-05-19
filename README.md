@@ -188,6 +188,7 @@ Every contribution, no matter the size, is highly appreciated. Your support not 
 
 Thank you for considering a donation and supporting our project. We truly value your contribution and are committed to delivering a high-quality package to meet your needs.
 If you would like to make a donation, you can do so by visiting our donation page [here](https://www.buymeacoffee.com/Andishe). We accept donations through various payment methods, providing you with flexibility in choosing the option that works best for you
+
 ## Author
 
 "Persian-Use" was created by Andishe Abbasian.
