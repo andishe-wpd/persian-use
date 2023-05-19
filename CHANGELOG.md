@@ -20,3 +20,5 @@ updated test env
 updated date convert test 
 - 5-17-2023
 updated build process and standared code export
+- 5-19-2023
+added linting formatting and husky precommit
