@@ -182,6 +182,12 @@ To use any of the included utilities in your project, simply import the correspo
 
 If you'd like to contribute to this project, feel free to submit a pull request or open an issue.
 
+## Show Your Support
+
+Every contribution, no matter the size, is highly appreciated. Your support not only encourages us but also helps motivate us to keep working on improving this package. If you find value in using this npm package, we would be grateful if you consider making a donation to support our efforts.
+
+Thank you for considering a donation and supporting our project. We truly value your contribution and are committed to delivering a high-quality package to meet your needs.
+If you would like to make a donation, you can do so by visiting our donation page [here](https://www.buymeacoffee.com/Andishe). We accept donations through various payment methods, providing you with flexibility in choosing the option that works best for you
 ## Author
 
 "Persian-Use" was created by Andishe Abbasian.
