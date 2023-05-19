@@ -61,6 +61,21 @@ export const useFinglishToPersian = (text) => {
     h: 'ح',
     kh: 'خ',
     d: 'د',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     z: 'ز',
     zh: 'ژ',
     sh: 'ش',
