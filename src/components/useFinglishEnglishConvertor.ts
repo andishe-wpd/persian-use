@@ -87,4 +87,4 @@ export const useFinglishToPersian = (text) => {
   return persian
 }
 
-let me =                                'adsfasdfafdrwefrefws';
+let me =                                             'adsfasdfafdrwefrefws';
