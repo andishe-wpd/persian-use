@@ -237,22 +237,22 @@ const flowers = [
   [1705, 1589],
   [1576, 1575, 1587, 1606],
   [1705, 1587],
-];
+]
 
-export const trees: any = [];
+export const trees: any = []
 
 function charCodesToString(charCodes) {
-  let str = "";
+  let str = ''
   for (let i = 0; i < charCodes.length; i++) {
-    const char = String.fromCharCode(charCodes[i]);
-    str += char;
+    const char = String.fromCharCode(charCodes[i])
+    str += char
   }
-  return str;
+  return str
 }
 
 flowers.map((item) => {
-  return trees.push(charCodesToString(item));
-});
+  return trees.push(charCodesToString(item))
+})
 
 // function stringToCharCodes(str) {
 //     const charCodes = [];

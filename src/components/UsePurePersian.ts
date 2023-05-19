@@ -1,9 +1,9 @@
 const usePurePersian = (str: string) => {
   if (/^[\u0600-\u06FF\s]+$/.test(str)) {
-    return true;
+    return true
   } else {
-    return false;
+    return false
   }
-};
+}
 
-export default usePurePersian;
+export default usePurePersian
