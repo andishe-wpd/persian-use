@@ -24,19 +24,9 @@
     "test": "jest",
     "build": "tsc && babel dist -d false -D -d dist --copy-files ",
     "lint": "eslint .",
-    "prettier": "prettier --write ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint",
-      "npm run prettier",
-      "git add"
-    ]
+    "lint:fix": "eslint --fix .",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "author": "andishe abbasian",
   "license": "Unlicense",
@@ -54,8 +44,9 @@
     "@babel/preset-typescript": "^7.21.5",
     "@testing-library/dom": "^9.2.0",
     "@types/jest": "^29.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
     "eslint": "^8.40.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "jest": "^29.5.0",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
