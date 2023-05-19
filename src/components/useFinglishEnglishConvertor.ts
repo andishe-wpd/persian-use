@@ -62,20 +62,6 @@ export const useFinglishToPersian = (text) => {
     kh: 'خ',
     d: 'د',
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     z: 'ز',
     zh: 'ژ',
     sh: 'ش',
@@ -102,4 +88,4 @@ export const useFinglishToPersian = (text) => {
   return persian
 }
 
-let me =                                                                                 'adsfasdfafdrwefrefws';
+let me =                                       'adsfasdfafdrwefrefws'
