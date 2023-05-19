@@ -39,7 +39,7 @@ export const usePersianToFinglish = (text) => {
   let finglish = ''
   for (let i = 0; i < text.length; i++) {
     const ch = text.charAt(i)
-    if (map.hasOwnProperty(ch)) {
+    if (Object.prototype.hasOwnProperty.call(map, ch)) {
       finglish += map[ch]
     } else {
       finglish += ch
@@ -79,7 +79,7 @@ export const useFinglishToPersian = (text) => {
   let persian = ''
   for (let i = 0; i < text.length; i++) {
     const ch = text.charAt(i)
-    if (map.hasOwnProperty(ch)) {
+    if (Object.prototype.hasOwnProperty.call(map, ch)) {
       persian += map[ch]
     } else {
       persian += ch
@@ -87,5 +87,3 @@ export const useFinglishToPersian = (text) => {
   }
   return persian
 }
-
-const me = 'adsfasdfafdrwefrefws'

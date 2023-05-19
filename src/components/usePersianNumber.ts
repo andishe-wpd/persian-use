@@ -204,7 +204,7 @@ const calculateDigits = (arrNum) => {
 
 //Main Process That Turn a Number Into a String(122=>100+20+2)
 const getPersian = (sadgan, dahgan, yekan, index, numbers) => {
-  const flag = false
+  // const flag = false
   let result = ''
   const dahganPlusYekan = dahgan + yekan
 
