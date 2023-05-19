@@ -1,6 +1,6 @@
 // Function to convert Persian text to Finglish (Romanized Persian)
 export const usePersianToFinglish = (text) => {
-  var map = {
+  const map = {
     آ: 'a',
     ا: 'a',
     ب: 'b',
@@ -36,9 +36,9 @@ export const usePersianToFinglish = (text) => {
     ی: 'y',
     ي: 'y',
   }
-  var finglish = ''
-  for (var i = 0; i < text.length; i++) {
-    var ch = text.charAt(i)
+  let finglish = ''
+  for (let i = 0; i < text.length; i++) {
+    const ch = text.charAt(i)
     if (map.hasOwnProperty(ch)) {
       finglish += map[ch]
     } else {
@@ -50,7 +50,7 @@ export const usePersianToFinglish = (text) => {
 
 // Function to convert Finglish (Romanized Persian) text to Persian
 export const useFinglishToPersian = (text) => {
-  var map = {
+  const map = {
     a: 'ا',
     b: 'ب',
     p: 'پ',
@@ -76,9 +76,9 @@ export const useFinglishToPersian = (text) => {
     v: 'و',
     y: 'ی',
   }
-  var persian = ''
-  for (var i = 0; i < text.length; i++) {
-    var ch = text.charAt(i)
+  let persian = ''
+  for (let i = 0; i < text.length; i++) {
+    const ch = text.charAt(i)
     if (map.hasOwnProperty(ch)) {
       persian += map[ch]
     } else {
@@ -88,4 +88,4 @@ export const useFinglishToPersian = (text) => {
   return persian
 }
 
-let me = 'adsfasdfafdrwefrefws'
+const me = 'adsfasdfafdrwefrefws'

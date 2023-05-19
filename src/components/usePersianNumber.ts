@@ -92,7 +92,7 @@ export const convert = (number) => {
   number = number.replace('-', '')
 
   if (isDecimal(number)) {
-    let index = number.indexOf('.')
+    const index = number.indexOf('.')
     let decNumberStr = ''
 
     decNumber = number.substr(index + 1, number.length)
@@ -148,7 +148,7 @@ export const sliceNumber = (number, separator = ',') => {
   number = number.replace('-', '')
 
   if (isDecimal(number)) {
-    let index = number.indexOf('.')
+    const index = number.indexOf('.')
     dNum = number.substr(index + 1, number.length)
     number = number.substr(0, index)
   }
@@ -187,12 +187,12 @@ const putSeparator = (numString, separator = ',') => {
 const calculateDigits = (arrNum) => {
   let result = ''
   for (let i = 0; i < arrNum.length; i++) {
-    let parsedNum = parseInt(arrNum[i])
+    const parsedNum = parseInt(arrNum[i])
     let number = parsedNum
-    let sadgan = Math.floor(number / 100) * 100
+    const sadgan = Math.floor(number / 100) * 100
     number = number % 100
-    let dahgan = Math.floor(number / 10) * 10
-    let yekan = number % 10
+    const dahgan = Math.floor(number / 10) * 10
+    const yekan = number % 10
     result += i !== 0 && parsedNum ? ' و ' : ''
 
     result +=
@@ -204,9 +204,9 @@ const calculateDigits = (arrNum) => {
 
 //Main Process That Turn a Number Into a String(122=>100+20+2)
 const getPersian = (sadgan, dahgan, yekan, index, numbers) => {
-  let flag = false
+  const flag = false
   let result = ''
-  let dahganPlusYekan = dahgan + yekan
+  const dahganPlusYekan = dahgan + yekan
 
   if (threeDigits[sadgan]) {
     result +=
@@ -251,11 +251,11 @@ const getPersian = (sadgan, dahgan, yekan, index, numbers) => {
 
 //getting The Type Of Each Number (Billion, Million,...)
 const getType = (i, numbers) => {
-  let parsedNum = parseInt(numbers[i])
+  const parsedNum = parseInt(numbers[i])
   if (isNaN(parsedNum)) return ''
   if (!parsedNum) return ''
-  let length = numbers.length - i
-  let index = types.length - length
+  const length = numbers.length - i
+  const index = types.length - length
   return types[index]
 }
 
@@ -271,8 +271,8 @@ const isNegative = (number) => {
 //Calculate if number:String has '%' as Percent
 const isPercent = (string) => {
   if (typeof string !== 'string') return false
-  let index = string.indexOf('%')
-  let lIndex = string.lastIndexOf('%')
+  const index = string.indexOf('%')
+  const lIndex = string.lastIndexOf('%')
   if (index != lIndex) return false
   return index > 0
 }
@@ -290,8 +290,8 @@ const getString = (number) => {
 const isDecimal = (number) => {
   number = getString(number)
   if (number == '') return false
-  let index = number.indexOf('.')
-  let lIndex = number.lastIndexOf('.')
+  const index = number.indexOf('.')
+  const lIndex = number.lastIndexOf('.')
   if (index != lIndex) return false
   return index > 0
 }
