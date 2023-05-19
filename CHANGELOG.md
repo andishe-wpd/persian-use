@@ -22,3 +22,4 @@
   updated build process and standared code export
 - 5-19-2023
   added linting formatting and husky precommit.
+  version updated 
