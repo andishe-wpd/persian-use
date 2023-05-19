@@ -23,3 +23,4 @@
 - 5-19-2023
   added linting formatting and husky precommit.
   version updated
+  added donation link
